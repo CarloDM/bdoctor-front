@@ -1,17 +1,7 @@
 <script>
 export default {
   name:'Example',
-  data(){
-    return{
 
-    }
-  },
-  watch:{},
-  props:{},
-  methods:{},
-  mounted(){
-    console.log('componende base');
-  },
 }
 </script>
 <template>

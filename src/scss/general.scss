@@ -25,6 +25,7 @@ body {
   background-color: $white20;
   width: 100vw;
   height: 100vh;
+
 }
 
 #app{
@@ -36,6 +37,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+
 }
 
 header{
@@ -47,55 +49,25 @@ header{
   box-shadow: 0px 0px 10px 2px $hospitalGreen;
   z-index: 999;
 }
+
 main{
   height: calc(100% - 120px);
   overflow-y: scroll;
   margin-top: 120px;
-}
 
-.bg_green{
-  background-color: $hospitalGreen ;
 }
-.bg_green_light{
-  background-color: $hospitalGreenLight ;
-}
-.bg_green_lighten{
-  background-color: $hospitalGreenLighten ;
-}
-.bg_green_low{
-  background-color: $hospitalGreenLow ;
-}
-.bg_green_dark{
-  background-color: $hospitalGreenDark ;
-}
-.bg_azure{
-  background-color: $hospitalAzure ;
-}
-.bg_azure_light{
-  background-color: $hospitalAzureLight ;
-}
-.bg_rose{
-  background-color: $hospitalRose ;
-}
-.bg_red{
-  background-color: $hospitalRed ;
-}
-.bg_orange{
-  background-color: $hospitalOrange ;
-}
-.bg_blue_dark{
-  background-color: $blueDark ;
-}
-.bg_black{
-  background-color: $black40;
-}
-
 
 section {
   text-align: center;
+  box-shadow: inset -1px 0px 5px -1px $hospitalGreenLow;
+}
+.my_header_container{
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 
-.my_container{
+.my_container  {
   width: 100%;
   padding: 10px;
   margin: auto;
@@ -108,7 +80,10 @@ section {
   transition: all 500ms ease;
 }
 
+
+
 @media screen and (min-width:576px) {
+
   .my_container{
     width: 95%;
   }
@@ -149,4 +124,41 @@ section {
     width: 60%;
     max-width: 1200px;
   }
+}
+
+.bg_green{
+  background-color: $hospitalGreen ;
+}
+.bg_green_light{
+  background-color: $hospitalGreenLight ;
+}
+.bg_green_lighten{
+  background-color: $hospitalGreenLighten ;
+}
+.bg_green_low{
+  background-color: $hospitalGreenLow ;
+}
+.bg_green_dark{
+  background-color: $hospitalGreenDark ;
+}
+.bg_azure{
+  background-color: $hospitalAzure ;
+}
+.bg_azure_light{
+  background-color: $hospitalAzureLight ;
+}
+.bg_rose{
+  background-color: $hospitalRose ;
+}
+.bg_red{
+  background-color: $hospitalRed ;
+}
+.bg_orange{
+  background-color: $hospitalOrange ;
+}
+.bg_blue_dark{
+  background-color: $blueDark ;
+}
+.bg_black{
+  background-color: $black40;
 }
