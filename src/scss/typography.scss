@@ -1,0 +1,74 @@
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Mulish', sans-serif;
+// font-family: 'Rokkitt', serif;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', sans-serif;
+   
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+p,span {
+  font-family:'Mulish', sans-serif; 
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  word-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+a{
+  font-family: 'Rokkitt', serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: $hospitalRose;
+  text-decoration: none;
+}
+a:hover{
+  color: $hospitalRed;
+  text-decoration: underline !important;
+}
+
+.my_italic{
+  font-style: italic;
+}
+.my_alternative_font{
+  font-family: 'Rokkitt', serif;
+}
+
+.text_green{
+  color: $hospitalGreen ;
+}
+.text_green_light{
+  color: $hospitalGreenLight ;
+}
+.text_green_lighten{
+  color: $hospitalGreenLighten ;
+}
+.text_green_low{
+  color: $hospitalGreenLow ;
+}
+.text_green_dark{
+  color: $hospitalGreenDark ;
+}
+.text_azure{
+  color: $hospitalAzure ;
+}
+.text_azure_light{
+  color: $hospitalAzureLight ;
+}
+.text_rose{
+  color: $hospitalRose ;
+}
+.text_red{
+  color: $hospitalRed ;
+}
+.text_orange{
+  color: $hospitalOrange ;
+}
+.text_blue_dark{
+  color: $blueDark ;
+}
+.text_black{
+  color: $black40;
+}

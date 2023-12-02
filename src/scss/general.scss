@@ -1,0 +1,152 @@
+.debug1{
+  background-color: rgba(255, 0, 0, 0.248);
+  border: 1px solid black;
+}
+.debug2{
+  background-color: rgba(204, 255, 0, 0.248);
+  border: 1px solid black;
+}
+.debug3{
+  background-color: rgba(0, 0, 255, 0.248);
+  border: 1px solid black;
+}
+// -------------------------------------------
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Mulish', sans-serif;
+// font-family: 'Rokkitt', serif;
+
+body {
+  background-color: $white20;
+  width: 100vw;
+  height: 100vh;
+}
+
+#app{
+  width: 100%;
+  height: 100%;
+}
+
+.main_wrapper{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  background-color: $hospitalGreen;
+  color: $white40;
+  box-shadow: 0px 0px 10px 2px $hospitalGreen;
+  z-index: 999;
+}
+main{
+  height: calc(100% - 120px);
+  overflow-y: scroll;
+  margin-top: 120px;
+}
+
+.bg_green{
+  background-color: $hospitalGreen ;
+}
+.bg_green_light{
+  background-color: $hospitalGreenLight ;
+}
+.bg_green_lighten{
+  background-color: $hospitalGreenLighten ;
+}
+.bg_green_low{
+  background-color: $hospitalGreenLow ;
+}
+.bg_green_dark{
+  background-color: $hospitalGreenDark ;
+}
+.bg_azure{
+  background-color: $hospitalAzure ;
+}
+.bg_azure_light{
+  background-color: $hospitalAzureLight ;
+}
+.bg_rose{
+  background-color: $hospitalRose ;
+}
+.bg_red{
+  background-color: $hospitalRed ;
+}
+.bg_orange{
+  background-color: $hospitalOrange ;
+}
+.bg_blue_dark{
+  background-color: $blueDark ;
+}
+.bg_black{
+  background-color: $black40;
+}
+
+
+section {
+  text-align: center;
+}
+
+.my_container{
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  transition: all 500ms ease;
+}
+.my_container_medium{
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  transition: all 500ms ease;
+}
+
+@media screen and (min-width:576px) {
+  .my_container{
+    width: 95%;
+  }
+  .my_container_medium{
+    width: 80%;
+  }
+}
+@media screen and (min-width:768px) {
+  .my_container{
+    width: 90%;
+  }
+  .my_container_medium{
+    width: 75%;
+  }
+}
+@media screen and (min-width:992px) {
+  .my_container{
+    width: 85%;
+  }
+  .my_container_medium{
+    width: 70%;
+  }
+}
+@media screen and (min-width:1200px) {
+  .my_container{
+    width: 80%;
+  }
+  .my_container_medium{
+    width: 65%;
+  }
+}
+@media screen and (min-width:1400px) {
+  .my_container{
+    width: 75%;
+    max-width: 1600px;
+  }
+  .my_container_medium{
+    width: 60%;
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg4"
+   width="14"
+   height="16"
+   version="1.1"
+   viewBox="0 0 448 512"
+   sodipodi:docname="user-doctor-opt-blue-icon.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="54.8125"
+     inkscape:cx="6.9144812"
+     inkscape:cy="8.009122"
+     inkscape:window-width="1230"
+     inkscape:window-height="1041"
+     inkscape:window-x="1340"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <title
+     id="title1257">doctor-opt</title>
+  <path
+     id="path2"
+     d="m224 256a128 128 0 1 0 0-256 128 128 0 1 0 0 256zm-96 55c-74 22-128 90-128 171 0 16 13 30 30 30h389c16 0 30-13 30-30 0-81-54-149-128-171v51c28 7.1 48 32 48 62v40c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16s7.2-16 16-16v-24c0-18-14-32-32-32s-32 14-32 32v24c8.8 0 16 7.2 16 16s-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-40c0-30 20-55 48-62v-57c-6-0.6-12-0.9-18-0.9h-91c-6.2 0-12 0.3-18 0.9v65c23 6.9 40 28 40 54 0 31-25 56-56 56s-56-25-56-56c0-25 17-47 40-54v-59zm16 137a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"
+     fill="#3f3fee"
+     style="fill:#00a890;fill-opacity:1" />
+  <metadata
+     id="metadata1255">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>doctor-opt</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
