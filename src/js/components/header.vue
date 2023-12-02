@@ -19,7 +19,7 @@ export default {
     <header>
       <div class="my_header_container d-flex  justify-content-between p-0 ">
 
-        <a href="#"  class="logo_container">
+        <a href="/"  class="logo_container">
           <img src="../../assets/user-doctor-opt-icon.svg" alt="logo">
           <h1 class="my_italic text_green_dark">B-Doctor</h1>
         </a>

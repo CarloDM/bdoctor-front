@@ -25,11 +25,12 @@ export default {
     
     <main>
       
-      <Example/>
+        <router-view v-slot="{Component}">
+            <component :is="Component"></component>
+        </router-view>
       
     </main>
     
-
   </div>
 </template>
 <style lang="scss" >
