@@ -35,12 +35,14 @@ export default {
       <option value="">Recensioni</option>
     </select>
     
-    <select  name="specializzazione" id="specializzazione">
-      <option value="">specializzazione</option>
-      <option value="">specializzazione</option>
-      <option value="">specializzazione</option>
-      <option value="">specializzazione</option>
-      <option value="">specializzazione</option>
+    <select  name="service" id="service">
+      <option  value="" disabled selected >Seleziona specializzazione</option>
+
+      <option v-for="(service, index) in store.services " :key=index
+        value="{{ index }}"
+        >
+        {{ service }}
+      </option>
     </select>
     
   </div>

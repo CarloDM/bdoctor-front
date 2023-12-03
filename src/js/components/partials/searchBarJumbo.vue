@@ -19,11 +19,12 @@ export default {
     
     <select  name="specializzazione" id="specializzazione" class="jumbotron_search">
       <option  value="" disabled selected >Seleziona specializzazione</option>
-      <option value="">specializzazione</option>
-      <option value="">specializzazione</option>
-      <option value="">specializzazione</option>
-      <option value="">specializzazione</option>
-      <option value="">specializzazione</option>
+
+      <option v-for="(service, index) in store.services " :key=index
+        value="{{ index }}"
+        >
+        {{ service }}
+      </option>
     </select>
     
 

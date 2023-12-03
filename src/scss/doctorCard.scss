@@ -1,0 +1,59 @@
+.doctor_card{
+  height: 200px;
+  min-height: 200px;
+  background-color: rgba(255, 255, 255, 0.500);
+  padding: 1px;
+  margin-bottom: 10px;
+}
+.doctor_row_top{
+  height: 43%;
+  background-color: rgba(255, 255, 255, 0.500);
+}
+.doctor_row_bottom {
+  height: 57%;
+  text-align: left;
+  padding: 2px 15px 0px 15px;
+  & p{
+    margin-bottom: -2px;
+    margin-top: 5px;
+    color: $hospitalGreenDark;
+  }
+}
+
+.doctor_photo{
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.doctor_info_container{
+  width: calc(100% - (200px * 0.43));
+  text-align: left;
+  padding: 5px;
+  z-index: 1;
+  & h6, p {
+    line-height: 1.35rem ;
+    margin: 0px 0px 0px 8px;
+    padding: 0px;
+  }
+  & span{
+    display: inline-block;
+    margin: 2px 20px 0px 8px;
+  }
+  & img{
+    width: 0.9rem;
+    height: auto;
+  }
+}
+
+.star_overlay{
+  position: absolute;
+  display: flex;
+  height: 120%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  filter: sepia(1) brightness(3.7) hue-rotate(25deg) saturate(4) ;
+  z-index:-1;
+}

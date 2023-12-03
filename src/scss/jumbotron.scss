@@ -29,7 +29,7 @@
   height: 150px;
   transition: all 250ms ease-in;
   & h1{
-    font-size: calc(1.50rem + 1.5vw) ;
+    font-size: calc(1.5rem + 1.5vw) ;
     // font-size: calc(1.375rem + 1.5vw);
     margin-bottom: 10px;
   }
@@ -58,6 +58,9 @@
 @media screen and (min-width:1400px) {
   .jumbo_search_container{
     margin-top: 100px;
+    & h1{
+      font-size: calc(1.0rem + 1.1vw) ;
+    }
   }
 }
 @media screen and (min-width:1800px) {
