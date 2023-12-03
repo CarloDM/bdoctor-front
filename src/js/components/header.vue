@@ -25,7 +25,8 @@ export default {
         </a>
 
 
-        <div class="search_bar_container bg_green_lighten d-flex h-100  p-2 ">
+        <div v-if="this.$route.name === 'search'"
+        class="search_bar_container bg_green_lighten d-flex h-100  p-2 ">
 
             <select name="mediaVoti" id="mediaVoti">
               <option value="">mediaVoti</option>
@@ -44,6 +45,7 @@ export default {
             </select>
 
             <select  name="specializzazione" id="specializzazione">
+              <option value="" disabled selected>Seleziona specializzazione</option>
               <option value="">specializzazione</option>
               <option value="">specializzazione</option>
               <option value="">specializzazione</option>

@@ -11,7 +11,6 @@ export default {
   props:{},
   methods:{},
   mounted(){
-    console.log('componende base');
   },
 }
 </script>
@@ -19,6 +18,7 @@ export default {
 
     
     <select  name="specializzazione" id="specializzazione" class="jumbotron_search">
+      <option  value="" disabled selected >Seleziona specializzazione</option>
       <option value="">specializzazione</option>
       <option value="">specializzazione</option>
       <option value="">specializzazione</option>

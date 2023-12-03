@@ -13,7 +13,7 @@ export default {
   props:{},
   methods:{},
   mounted(){
-    console.log('componende base');
+
   },
 }
 </script>
@@ -27,10 +27,5 @@ export default {
         </div>
 
       </div>
-      <!-- <img class="jb_bg_img" src="../../../assets/doctor-opt.svg" alt=""> -->
-
     </section>
 </template>
-<style lang="scss" scoped>
-
-</style>
