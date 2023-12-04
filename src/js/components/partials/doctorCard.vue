@@ -13,7 +13,8 @@ export default {
     id:Number, //id fake del ciclo
   },
   methods:{
-    raingPercentage(){
+
+    getRatingPercentage(){
       const rating = this.doctor.rating;
       const percentage = ((rating / 5 ) * 100).toFixed(1);
       this.ratingPercentage = parseFloat(percentage);
@@ -28,20 +29,22 @@ export default {
       const description = document.getElementById(this.id);
       description.textContent = this.originalDescription;
       const containerWidth = description.offsetWidth;
-      const words = 22;
-      const maxWords = (containerWidth /   words);
+      const words = 23.8;
+      const maxWords = (containerWidth / words);
       const originalText = description.textContent;
       const wordsArray = originalText.split(' ');
       const truncatedText = wordsArray.slice(0, maxWords).join(' ');
       description.textContent = truncatedText + '...';
     },
   },
+
   mounted(){
-    this.raingPercentage();
+    this.getRatingPercentage();
     this.saveOriginalDescription();
     this.descriptionLengthLimit();
     window.addEventListener('resize', this.descriptionLengthLimit);
   },
+
 }
 </script>
 <template>
@@ -59,6 +62,7 @@ export default {
       <div class="doctor_info_container  h-100 ">
         <h6>{{ doctor.name }}</h6>
         <p>{{ doctor.services.join(', ') + '.' }}</p>
+
         <span style="position: relative;">
 
           <img src="../../../assets/star-regular.svg" alt="">
@@ -66,7 +70,7 @@ export default {
           <img src="../../../assets/star-regular.svg" alt="">
           <img src="../../../assets/star-regular.svg" alt="">
           <img src="../../../assets/star-regular.svg" alt="">
-          
+
           <div class="star_overlay " :style="{width: this.ratingPercentage + '%'}" >
             <img src="../../../assets/star-solid.svg" alt="">
             <img src="../../../assets/star-solid.svg" alt="">
@@ -76,6 +80,7 @@ export default {
           </div>
 
         </span>
+        
         <span>
           <img src="../../../assets/comment-solid.svg" alt="">
           <span> {{ ' ' + doctor.reviews + ' ' + 'recensioni'}}</span>

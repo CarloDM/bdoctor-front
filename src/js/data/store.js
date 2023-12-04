@@ -16,7 +16,7 @@ export const store = reactive ({
     name:'Dott.ssa Maria Di Mario',
     sex: 'female',
     services: ['Cardiologia','Chirurgia'],
-    rating: 3.5,
+    rating: 2,
     reviews: 4,
     address: 'Milano',
     photo: null,
