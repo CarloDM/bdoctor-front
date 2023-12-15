@@ -2,6 +2,7 @@
 import{store} from '../../data/store';
 import Jumbotron from '../partials/jumbotron.vue';
 import CardsContainer from '../cardsContainer.vue';
+import { api } from '../../data/api';
 export default {
   name:'Home',
   data(){
@@ -13,6 +14,7 @@ export default {
   watch:{},
   methods:{},
   mounted(){
+    api.methods.getDoctors();
     console.log('whereIam?', this.$route.name );
   },
 }

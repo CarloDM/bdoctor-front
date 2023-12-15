@@ -22,8 +22,8 @@ export default {
   <section class="bg_green_lighten">
     <div class="my_container">
 
-      <DoctorCard v-for="doctor,index in 20" :key="index"
-      :doctor="store.fakeDoctor"
+      <DoctorCard v-for="user,index in store.users.data" :key="index"
+      :user="user"
       :id="index"
       />
 
