@@ -53,12 +53,10 @@ export default {
     
     <div class="doctor_row_top w-100 d-flex  ">
       
-      <!-- <img v-if="user === null && doctor.sex === 'female'"
-      src="../../../assets/femaledoctor-placeholder.jpg" :alt="doctor.name" class="doctor_photo ">
-      <img v-else-if="doctor.photo === null && doctor.sex === 'male'"
-      src="../../../assets/maledoctor-placeholder.jpg" :alt="doctor.name" class="doctor_photo ">
+      <img v-if="user.doctor.photo === null"
+      src="../../../assets/femaledoctor-placeholder.jpg" :alt="user.name +' '+ user.lastname" class="doctor_photo ">
       <img v-else
-      :src='doctor.photo' :alt="doctor.name" class="doctor_photo "> -->
+      :src='user.doctor.photo' :alt="user.name +' '+ user.lastname" class="doctor_photo ">
 
       <div class="doctor_info_container  h-100 ">
         <h6>{{ user.name }} {{ user.lastname }}</h6>
