@@ -1,5 +1,7 @@
 <script>
+import axios from 'axios';
 import {store} from '../../data/store';
+import {api} from '../../data/api';
 export default {
   name:'SearchBar',
   data(){
@@ -11,6 +13,7 @@ export default {
   props:{},
   methods:{},
   mounted(){
+    api.methods.getTypologies();
   },
 }
 </script>
@@ -23,7 +26,7 @@ export default {
       <option v-for="(service, index) in store.services " :key=index
         value="{{ index }}"
         >
-        {{ service }}
+        {{ service.name }}
       </option>
     </select>
     

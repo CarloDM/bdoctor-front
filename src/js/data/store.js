@@ -1,16 +1,11 @@
 import {reactive} from 'vue';
 export const store = reactive ({
   ciao:'ciao',
+  typologiesApi: 'http://127.0.0.1:8000/api/typologies/get',
+  doctorsApi: 'http://127.0.0.1:8000/api/doctors/get',
 
-
-  services:[
-    "Allergologia", "Cardiologia", "Chirurgia", "Dermatologia", 
-    "Endocrinologia", "Fisiatria", "Fisioterapia", "Gastroenterologia", 
-    "Geriatria", "Ginecologia", "Logopedista", "Medicina del lavoro", 
-    "Neurochirurgia", "Oncologia", "Odontoiatria", "Ortopedia", 
-    "Osteopatia", "Otorinolaringoiatria", "Pediatria", "Pneumologia", 
-    "Psichiatria", "Psicologia", "Urologia" 
-  ],
+  services:[],
+  users:[],
 
   fakeDoctor: {
     name:'Dott.ssa Maria Di Mario',

@@ -1,4 +1,5 @@
 <script>
+import { api } from '../../data/api';
 import{store} from '../../data/store';
 export default {
   name:'DoctorPage',
