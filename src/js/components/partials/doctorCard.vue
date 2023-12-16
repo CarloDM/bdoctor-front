@@ -82,10 +82,10 @@ export default {
 
         </span>
         
-        <!-- <span>
+        <span>
           <img src="../../../assets/comment-solid.svg" alt="">
-          <span> {{ ' ' + doctor.reviews + ' ' + 'recensioni'}}</span>
-        </span> -->
+          <span> {{ ' ' + this.user.reviewCount + ' ' + 'recensioni'}}</span>
+        </span>
       </div>
       
     </div>
