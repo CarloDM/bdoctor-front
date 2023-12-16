@@ -15,7 +15,7 @@ export const api = reactive({
             store.usersIsload = false;
             axios.get(store.doctorsApi)
             .then((response) => {
-                // console.log(response.data.data);
+                console.log(response.data.data);
                 store.users = response.data.data;
                 store.usersIsload = true;
             })

@@ -14,11 +14,13 @@ export default {
   },
   methods:{
 
-    // getRatingPercentage(){
-    //   const rating = this.doctor.rating;
-    //   const percentage = ((rating / 5 ) * 100).toFixed(1);
-    //   this.ratingPercentage = parseFloat(percentage);
-    // },
+    getRatingPercentage(){
+
+      const rating = this.user.averageStars;
+      const percentage = ((rating / 5 ) * 100).toFixed(1);
+      this.ratingPercentage = parseFloat(percentage);
+
+    },
 
     saveOriginalDescription(){
       const description = document.getElementById(this.id);
@@ -39,7 +41,7 @@ export default {
   },
 
   mounted(){
-    // this.getRatingPercentage();
+    this.getRatingPercentage();
     this.saveOriginalDescription();
     this.descriptionLengthLimit();
     window.addEventListener('resize', this.descriptionLengthLimit);
@@ -62,7 +64,7 @@ export default {
         <h6>{{ user.name }} {{ user.lastname }}</h6>
         <p>{{ user.doctor.services }}</p>
 
-        <!-- <span style="position: relative;">
+        <span style="position: relative;">
 
           <img src="../../../assets/star-regular.svg" alt="">
           <img src="../../../assets/star-regular.svg" alt="">
@@ -80,7 +82,7 @@ export default {
 
         </span>
         
-        <span>
+        <!-- <span>
           <img src="../../../assets/comment-solid.svg" alt="">
           <span> {{ ' ' + doctor.reviews + ' ' + 'recensioni'}}</span>
         </span> -->
