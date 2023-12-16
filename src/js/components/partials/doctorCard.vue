@@ -14,11 +14,13 @@ export default {
   },
   methods:{
 
-    // getRatingPercentage(){
-    //   const rating = this.doctor.rating;
-    //   const percentage = ((rating / 5 ) * 100).toFixed(1);
-    //   this.ratingPercentage = parseFloat(percentage);
-    // },
+    getRatingPercentage(){
+
+      const rating = this.user.averageStars;
+      const percentage = ((rating / 5 ) * 100).toFixed(1);
+      this.ratingPercentage = parseFloat(percentage);
+
+    },
 
     saveOriginalDescription(){
       const description = document.getElementById(this.id);
@@ -39,7 +41,7 @@ export default {
   },
 
   mounted(){
-    // this.getRatingPercentage();
+    this.getRatingPercentage();
     this.saveOriginalDescription();
     this.descriptionLengthLimit();
     window.addEventListener('resize', this.descriptionLengthLimit);
@@ -53,18 +55,16 @@ export default {
     
     <div class="doctor_row_top w-100 d-flex  ">
       
-      <!-- <img v-if="user === null && doctor.sex === 'female'"
-      src="../../../assets/femaledoctor-placeholder.jpg" :alt="doctor.name" class="doctor_photo ">
-      <img v-else-if="doctor.photo === null && doctor.sex === 'male'"
-      src="../../../assets/maledoctor-placeholder.jpg" :alt="doctor.name" class="doctor_photo ">
+      <img v-if="user.doctor.photo === null"
+      src="../../../assets/femaledoctor-placeholder.jpg" :alt="user.name +' '+ user.lastname" class="doctor_photo ">
       <img v-else
-      :src='doctor.photo' :alt="doctor.name" class="doctor_photo "> -->
+      :src='user.doctor.photo' :alt="user.name +' '+ user.lastname" class="doctor_photo ">
 
       <div class="doctor_info_container  h-100 ">
         <h6>{{ user.name }} {{ user.lastname }}</h6>
         <p>{{ user.doctor.services }}</p>
 
-        <!-- <span style="position: relative;">
+        <span style="position: relative;">
 
           <img src="../../../assets/star-regular.svg" alt="">
           <img src="../../../assets/star-regular.svg" alt="">
@@ -84,8 +84,8 @@ export default {
         
         <span>
           <img src="../../../assets/comment-solid.svg" alt="">
-          <span> {{ ' ' + doctor.reviews + ' ' + 'recensioni'}}</span>
-        </span> -->
+          <span> {{ ' ' + this.user.reviewCount + ' ' + 'recensioni'}}</span>
+        </span>
       </div>
       
     </div>

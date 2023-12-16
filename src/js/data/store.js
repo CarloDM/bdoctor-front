@@ -1,11 +1,17 @@
 import {reactive} from 'vue';
 export const store = reactive ({
   ciao:'ciao',
+
   typologiesApi: 'http://127.0.0.1:8000/api/typologies/get',
   doctorsApi: 'http://127.0.0.1:8000/api/doctors/get',
 
   services:[],
+  
   users:[],
+  usersIsload: false,
+
+
+
 
   fakeDoctor: {
     name:'Dott.ssa Maria Di Mario',
