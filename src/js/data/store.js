@@ -5,7 +5,14 @@ export const store = reactive ({
   typologiesApi: 'http://127.0.0.1:8000/api/typologies/get',
   doctorsApi: 'http://127.0.0.1:8000/api/doctors/get',
 
-  services:[],
+
+  searching:{
+    typologies: null,
+  },
+
+
+
+  typologies:[],
   
   users:[],
   usersIsload: false,

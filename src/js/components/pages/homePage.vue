@@ -1,8 +1,9 @@
 <script>
 import{store} from '../../data/store';
+import { api } from '../../data/api';
 import Jumbotron from '../partials/jumbotron.vue';
 import CardsContainer from '../cardsContainer.vue';
-import { api } from '../../data/api';
+import Paginator from '../partials/paginator.vue';
 export default {
   name:'Home',
   data(){
@@ -10,7 +11,7 @@ export default {
       store,
     }
   },
-  components:{Jumbotron,CardsContainer},
+  components:{Jumbotron,CardsContainer, Paginator},
   watch:{},
   methods:{},
   mounted(){
@@ -22,7 +23,8 @@ export default {
 <template>
 
   <Jumbotron/>
-
+  <Paginator />
   <CardsContainer/>
+  <Paginator />
 
 </template>

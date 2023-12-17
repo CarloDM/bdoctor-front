@@ -7,11 +7,18 @@ export default {
   data(){
     return{
       store,
+      
     }
   },
   watch:{},
   props:{},
-  methods:{},
+  methods:{
+    selectedSpecialization(event){
+      console.log('opzione specializzazione',event.target.selectedOptions[0].value);
+      store.searching.typologies = event.target.selectedOptions[0].value;
+      this.$router.push({ name: 'search' });
+    }
+  },
   mounted(){
     api.methods.getTypologies();
   },
@@ -20,11 +27,11 @@ export default {
 <template>
 
     
-    <select  name="specializzazione" id="specializzazione" class="jumbotron_search">
+    <select @change="selectedSpecialization"  name="specializzazione" id="specializzazione" class="jumbotron_search">
       <option  value="" disabled selected >Seleziona specializzazione</option>
 
-      <option v-for="(service, index) in store.services " :key=index
-        value="{{ index }}"
+      <option v-for="(service, index) in store.typologies " :key='index'
+        :value=" index "
         >
         {{ service.name }}
       </option>
