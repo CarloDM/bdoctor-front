@@ -25,19 +25,20 @@ export default {
       <div v-if="store.usersIsload"
       class="paginator_btn_container d-flex justify-content-around">
 
-        <div v-for="(link, index) in store.searching.paginate.links" :key="index"
-        class="paginate_btn d-flex justify-content-center align-items-center">
 
-          <a v-if='!(index === 0) && !(index === 14) && link.url' 
-          @click="api.methods.navigateResults(link.url)"
-          class="text_blue_dark paginator_link"
-          >
-          {{ link.label }}</a>
+          <div v-for="(link, index) in store.users.links" :key="index"
+          class="paginate_btn d-flex justify-content-center align-items-center">
 
-        </div>
+            <a v-if='!(index === 0) && !(index === 14) && link.url' 
+            @click="api.methods.navigateResults(link.url)"
+            class="text_blue_dark paginator_link"
+            >
+            {{ link.label }}</a>
+
+          </div>
+
 
       </div>
-
     </div>
   </div>
 </template>

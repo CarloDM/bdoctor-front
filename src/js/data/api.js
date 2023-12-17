@@ -16,7 +16,6 @@ export const api = reactive({
             axios.get(store.doctorsApi)
             .then((response) => {
 
-                store.searching.paginate = response.data.data;
                 store.users = response.data.data;
                 store.usersIsload = true;
             })
@@ -27,7 +26,6 @@ export const api = reactive({
             axios.get(url)
             .then((response)=>{
 
-                store.searching.paginate = response.data.data;
                 store.users = response.data.data;
 
             })
