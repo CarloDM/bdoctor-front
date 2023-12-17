@@ -45,7 +45,6 @@ export default {
     this.saveOriginalDescription();
     this.descriptionLengthLimit();
     window.addEventListener('resize', this.descriptionLengthLimit);
-    console.log(this.user);
   },
 
 }
@@ -64,12 +63,13 @@ export default {
 
         <h6 class="me-3" style="display: inline-block;">{{ user.name }} {{ user.lastname }}</h6>
 
-        <span>(</span>
-        <span v-for="(typology, index) in this.user.doctor.typologies" :key="index"
-        >
+        <span>(
+
+        <span v-for="(typology, index) in this.user.doctor.typologies" :key="index">
         {{ typology.name }}
         </span>
-        <span>)</span>
+
+        )</span>
 
         <p class="doctor_service">{{ user.doctor.services }}</p>
 

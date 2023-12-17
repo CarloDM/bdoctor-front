@@ -8,6 +8,7 @@ export const store = reactive ({
 
   searching:{
     typologies: null,
+    paginate : null,
   },
 
 
