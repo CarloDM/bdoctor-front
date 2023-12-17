@@ -60,11 +60,20 @@ export default {
       <img v-else
       :src='user.doctor.photo' :alt="user.name +' '+ user.lastname" class="doctor_photo ">
 
-      <div class="doctor_info_container  h-100 ">
-        <h6>{{ user.name }} {{ user.lastname }}</h6>
-        <p>{{ user.doctor.services }}</p>
+      <div class="doctor_info_container h-100 ">
 
-        <span style="position: relative;">
+        <h6 class="me-3" style="display: inline-block;">{{ user.name }} {{ user.lastname }}</h6>
+
+        <span>(</span>
+        <span v-for="(typology, index) in this.user.doctor.typologies" :key="index"
+        >
+        {{ typology.name }}
+        </span>
+        <span>)</span>
+
+        <p class="doctor_service">{{ user.doctor.services }}</p>
+
+        <span class=" ms-2 me-3" style="position: relative;">
 
           <img src="../../../assets/star-regular.svg" alt="">
           <img src="../../../assets/star-regular.svg" alt="">

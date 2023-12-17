@@ -29,7 +29,7 @@ export default {
       
     </div>
 
-    <div class="my_container">
+    <div v-else  class="my_container">
       <h3 class=" mt-5">Loading</h3>
     </div>
   </section>

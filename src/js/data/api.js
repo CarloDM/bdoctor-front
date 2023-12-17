@@ -7,7 +7,7 @@ export const api = reactive({
         getTypologies() {
             axios.get(store.typologiesApi)
                 .then((response) => {
-                    store.services = response.data.data;
+                    store.typologies = response.data.data;
                 })
         },
 
